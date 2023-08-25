@@ -1,0 +1,21 @@
+{
+  "name": "eleventy-vitest",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --require esbuild-register node_modules/.bin/eleventy --serve --watch",
+    "build": "node --require esbuild-register node_modules/.bin/eleventy"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^3.2.7",
+    "@11ty/eleventy": "^2.0.0-canary.23",
+    "@types/vhtml": "^2.2.4",
+    "esbuild-register": "^3.3.2",
+    "vhtml": "^2.2.0",
+    "prettier": "^2.8.1",
+    "vitest": "^0.26.2",
+    "@11ty/eleventy-plugin-vite": "^2.0.0-canary.2"
+  }
+}
