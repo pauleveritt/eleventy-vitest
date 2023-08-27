@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node --require esbuild-register node_modules/.bin/eleventy --serve --watch",
-    "build": "node --require esbuild-register node_modules/.bin/eleventy"
+    "build": "node --require esbuild-register node_modules/.bin/eleventy",
+    "test": "vitest"
   },
   "devDependencies": {
     "typescript": "^4.6.4",

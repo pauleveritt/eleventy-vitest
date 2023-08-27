@@ -3,6 +3,7 @@ import { expect, test } from "vitest";
 const Eleventy = require("../node_modules/@11ty/eleventy/src/Eleventy.js");
 
 test("render Eleventy", async () => {
+  // This goes to requireAbsolute which calls require and fails.
   const elev = new Eleventy("..", "../_site");
   const results = await elev.toJSON();
   expect(results).to.be.true;
